@@ -1,7 +1,8 @@
 public class Exception {
     public static void main(String[] args) {
 
-        try {
+      //JVM - Top to bottom execution of code. If any exception occurs, JVM will terminate the program and print the exception message and stack trace to the console. The stack trace is a list of method calls that the program was in the middle of when an exception was thrown. It is printed to the console when an exception is thrown and can be used to help debug the program.
+         try {
           System.out.println(5/0); // this will throw ArithmeticException because we cannot divide a number by zero
           
            /* String s = null;
