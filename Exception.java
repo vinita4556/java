@@ -1,7 +1,31 @@
-public class Exception{
+public class Exception {
     public static void main(String[] args) {
+
+        try {
+          System.out.println(5/0); // this will throw ArithmeticException because we cannot divide a number by zero
+          
+           /* String s = null;
+            s.length();*/ 
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Divide by zero is not allowed. ");
+        }
+        //Multiple catch blocks - we can have multiple catch blocks to handle different types of exceptions. The catch blocks are checked in the order they are written. The first catch block that matches the type of exception thrown will be executed.
+        catch (NullPointerException e) {
+            System.out.println("Null pointer exception is not allowed. ");
+            //output: Null pointer exception is not allowed.
+            //EK BAAR MAI EK HI CATCH BLOCK EXECUTE HOGA 
+    }
+  }
+}
+
+
+
+
+
+
    // Exception Handling in chain of method calls
-  methodA(8,0);
+  /*methodA(8,0);
   }
     private static void methodA(int a, int b) {
     methodB(a,b);
