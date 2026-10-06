@@ -1,4 +1,4 @@
-public class Exception {
+public class ExceptionHandli {
     public static void main(String[] args) {
 
       //JVM - Top to bottom execution of code. If any exception occurs, JVM will terminate the program and print the exception message and stack trace to the console. The stack trace is a list of method calls that the program was in the middle of when an exception was thrown. It is printed to the console when an exception is thrown and can be used to help debug the program.
