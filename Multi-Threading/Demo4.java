@@ -5,7 +5,7 @@ public class Demo4 {
         //loop
         for(int i = 0; i <= 100; i++){
             if(i % 2 == 0 ){
-                System.out.println("T1" +i);
+                System.out.println("T1:" +i);
             }
         }
     });
@@ -15,7 +15,7 @@ public class Demo4 {
         //loop
         for(int i = 0; i <= 100; i++){
             if(i % 2 != 0 ){
-                System.out.println("T2" +i);
+                System.out.println("T2 : " +i);
             }
         }
     });
