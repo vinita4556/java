@@ -1,13 +1,29 @@
 /* 3rd - Thread.yield() - I am willing to give my cpu time to someone else with same priority and
    that wants to run  
 
-   OS can reject this 
-   It is like a suggestion to the OS
-   Current threadf does not go ti WAITING, TIMED_WAITING, BLOCKED.
+   1.OS can reject this 
+   2.It is like a suggestion to the OS
+   3.Current threadf does not go ti WAITING, TIMED_WAITING, BLOCKED.
    It does go to only RUNNABLE state 
 */ 
 public class third {
     public static void main(String[] args){
+       Thread t1 = new Thread(() -> {
+        for(int i =0 ; i<10 ; i++){
+             System.out.println("T1 : " + i);
+             Thread.yield();
+        }
+       });
+
+
+        Thread t2 = new Thread(() -> {
+        for(int i =0 ; i<10 ; i++){
+             System.out.println("T2 : " + i);
+        }
+       });
+       t1.start();
+       t2.start(); 
+
 
     }
 }
