@@ -6,7 +6,9 @@ public class sixth {
         Thread t1 = new Thread(() -> {
             System.out.println(Thread.currentThread().getName());
         });
-        t1.start();
+
+        t1.setName("worker-1");
+        t1.start(); //output -> Thread-0
 
     }
 
