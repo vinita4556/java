@@ -27,9 +27,9 @@ public class Demo1 {
 }
 
 class Counter {
-    public int count = 0;
+    public int count = 0; // variable declare  
 
-    void increment() {
+     synchronized void increment() {
         count++; //critical section
     }
 }
