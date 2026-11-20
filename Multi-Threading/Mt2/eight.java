@@ -1,6 +1,6 @@
 /*
 Daemon Threads:-  background running threads are called Daemon threads 
-stop immediately once main thread is completed
+stop immediately once main thread is completedh
 */
 
 
